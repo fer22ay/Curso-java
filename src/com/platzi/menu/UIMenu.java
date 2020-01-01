@@ -19,7 +19,7 @@ public class UIMenu {
 
         int response = 0;
         do {
-            System.out.println("1. Doctro");
+            System.out.println("1. Doctor");
             System.out.println("2. Patient");
             System.out.println("0. Salir");
 
@@ -77,7 +77,7 @@ public class UIMenu {
                     if (p.getEmail().equals(email)) {
                         emailCorrect = true;
                         patientLogged = p;
-                        //ShowPatientMenu
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
             }
